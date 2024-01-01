@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.material-icons {
+    font-size: 20px;
+}
+
+/* headerNav */
+
+.footerNav .nav-item,
+.headerNav .nav-item {
+    color: #8D8D8D;
+    transition: all .3s ease;
+}
+
+.footerNav .nav-item:hover,
+.headerNav .nav-item:hover {
+    transform: translateY(-5px);
+}
+
+.headerNav .nav-item:hover {
+    color: #916000;
+}
+
+/* Banner */
+
+.footerContainer,
+.bannerContainer {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bannerContainer {
+    background-image: url('../assets/brand.jpg');
+    height: 870px;
+}
+
+.bannerContent {
+    left: 50%;
+    max-width: 445px;
+}
+
+.bannerContainer .btn {
+    min-width: 350px;
+    transition: all .3s ease;
+}
+
+.bannerContainer .btn:hover {
+    color: rgba(0, 0, 0, .7) !important;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+/* Introduce */
+
+.introduceContainer .perfumeImg {
+    height: 555px;
+}
+
+.introduceContainer .productBox {
+    max-width: 350px;
+}
+
+.more {
+    color: #AC8A46;
+}
+
+.more:hover {
+    opacity: .7;
+}
+
+.introduceContainer .col-lg-12:nth-child(4) img {
+    height: 1080px;
+}
+
+.blog p,
+.introduceContainer .col-lg-12:nth-child(4) p {
+    line-height: 28px;
+}
+
+.introduceContainer .col-lg-12:nth-child(4) a {
+    transition: all .3s ease;
+}
+
+.introduceContainer .col-lg-12:nth-child(4) a:hover {
+    color: rgba(255, 255, 255, .8) !important;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* Sale */
+
+.blog img,
+.productContainer img {
+    transition: all .3s ease;
+    height: 520px;
+}
+
+.productContainer img {
+    cursor: pointer;
+}
+
+.productContainer img:hover {
+    transform: scale(1.1);
+}
+
+.blog img {
+    object-fit: cover;
+}
+
+.blog .blogContent {
+    max-width: 350px;
+}
+
+/* Footer */
+
+.footerContainer {
+    background-image: url('../assets/footerIImg.jpg');
+    min-height: 600px;
+}
+
+.footerContainer .btn {
+    background-color: #916000;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.footerContainer .btn:active {
+    background-color: #916000;
+}
+
+.footerContainer input {
+    border-color: #916000;
+    border-radius: 5px 0 0 5px;
+}
+
+.footerContainer input:focus-visible,
+.footerContainer input:focus {
+    box-shadow: none;
+    border: #916000 1px solid;
+    outline: none !important;
+}
+
+.favoriteNav,
+.productNav,
+.footerNav {
+    background-color: #916000;
+}
+
+.productNav a,
+.footerNav a {
+    color: white;
+}
+
+.footerNav span {
+    font-size: 12px !important;
+}
+
+/* productList */
+
+.productListContainer img {
+    transition: all .3s ease;
+    cursor: pointer;
+    height: 255px;
+}
+
+.productListContainer img:hover {
+    transform: scale(1.1);
+}
+
+.productListContainer .shopIcon {
+    color: #916000;
+    cursor: pointer;
+}
+
+.navShopIcon{
+    position: relative;
+}
+.navShopIcon::after{
+    position: absolute;
+    content: '\0033';
+    top: -12px;
+    left: 10px;
+    background-color: #916000;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+.headerNav .nav-item + .nav-item{
+    border-top: 1px white solid;
+}
+/* media tag */
+@media (max-width: 426px){
+    .headerNav .nav-item{
+        background-color: #707070;
+    }
+    .headerNav .nav-item a{
+        color: white;
+    }
+}
+@media (max-width: 376px) {
+    .bannerContainer {
+        height: 480px;
+    }
+    .bannerContent{
+        left: 0%;
+        max-width: 345px
+    }
+    .introduceContainer .perfumeImg{
+        height: 350px;
+    }
+    .productContainer img{
+        height: 350px;
+    }
+    .productListContainer img{
+        height: 165px;
+    }
+    .headerNav .navbar-nav{
+        position: absolute;
+        width: 100%;
+    }
+    .introduceContainer .productBox{
+        max-width: none;
+    }
+}
