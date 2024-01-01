@@ -6,6 +6,6 @@ export default defineConfig({
   build: {
     outDir: 'build',
   },
-  base: '/perfume/',
+  base: '/perfume',
   plugins: [react()],
 })
